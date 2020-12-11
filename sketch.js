@@ -12,7 +12,7 @@ target(1/2) is a reference to the next story section that option activates.
 //Spite screen
 //allow for mouse clicking to advance screens
 
-
+'use strict'
 
 // Create a variable for each stage in your game //easier way to do/organize this? aarays?
 var title;
@@ -28,8 +28,9 @@ var moonIntro1B, moonIntro2B, moonIntro3B, moonIntro4B, moonIntro5B, moonIntro6B
 var moonChoice1, moonChoice2, moonChoice3;
 var lunarLieutenant1, lunarLieutenant2, lunarLieutenant3A, lunarLieutenant3B, lunarLieutenant4, lunarLieutenant5, lunarLieutenant6;
 var lunarCommander1, lunarCommander2, lunarCommander3A, lunarCommander3B, lunarCommander4, lunarCommander5, lunarCommander6;
-var investigation1, investigation2, investigation3, investigation4A,investigation4AA, investigation4AB, investigation4B, investigation5, investigation6;
-var interrogation1A, interrogation1B, interrogation2A,interrogation2B, interrogation3
+var investigation1A,investigation1B, investigation2, investigation3, investigation4A,investigation4AA, investigation4AB, investigation4B, investigation5, investigation6;
+var interrogation1A, interrogation1B, interrogation2A,interrogation2B, interrogation3;
+var scroll1,scroll2;
 var lunarEnd1, lunarEnd2, lunarEnd3, lunarEnd4A, lunarEnd4B;
 
 // let letterSpacing; //future coding for text animation?
