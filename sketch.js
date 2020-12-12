@@ -25,13 +25,13 @@ var leaveThePhoto;
 //moon section
 var moonIntro1A, moonIntro2A, moonIntro3A, moonIntro4A, moonIntro5A, moonIntro6A, moonIntro7A, moonIntro8A;
 var moonIntro1B, moonIntro2B, moonIntro3B, moonIntro4B, moonIntro5B, moonIntro6B, moonIntro7B, moonIntro8B;
-var moonChoice1, moonChoice2, moonChoice3;
+var moonChoice1, moonChoice2, moonChoice3A, moonChoice3B;
 var lunarLieutenant1, lunarLieutenant2, lunarLieutenant3A, lunarLieutenant3B, lunarLieutenant4, lunarLieutenant5, lunarLieutenant6;
 var lunarCommander1, lunarCommander2, lunarCommander3A, lunarCommander3B, lunarCommander4, lunarCommander5, lunarCommander6;
-var investigation1A,investigation1B, investigation2, investigation3, investigation4A,investigation4AA, investigation4AB, investigation4B, investigation5, investigation6;
+var investigation1A,investigation1B, investigation2, investigation3, investigation4A,investigation4AA, investigation4AB, investigation4B, investigation5, investigation6, investigation7,investigation8,investigation9;
 var interrogation1A, interrogation1B, interrogation2A,interrogation2B, interrogation3;
 var scroll1,scroll2;
-var lunarEnd1, lunarEnd2, lunarEnd3, lunarEnd4A, lunarEnd4B;
+var lunarEnd1, lunarEnd2A,lunarEnd2B, lunarEnd3, lunarEnd4A, lunarEnd4B;
 
 // let letterSpacing; //future coding for text animation?
 
@@ -119,7 +119,7 @@ function createStory() {
   // In this example you need to initialise these in reverse order, so that
   // when you assign a target it already exists. I.e., start at the end!
   lunarEnd4B = new StorySection(
-    "The Escavator explodes, falling backwards into one of the many craters of the moon. It was a brief explosion but it brightened up the hull of your ship for a moment before leaving behind a fiery mess near the Lunar Base. ",
+    "The Escavator explodes, falling backwards into one of the many craters of the moon. It was a brief explosion but it brightened up the hull of your ship for a moment before leaving behind a fiery mess near the Lunar Base.\n\n Ending 4 - Sacrifice ",
     "(A) Next", //Text for option 1
     lunarEnd4B, //For end sections, there is no target
     "", //Text for option 1
@@ -133,55 +133,90 @@ function createStory() {
     lunarEnd4B //For end sections, there is no target
   ); // best environment ending //blow up the escavator
   lunarEnd3 = new StorySection(
-    "You end up telling the Colonel that if he doesn't shut down the drill, that you would report him to both the UN and his superiors about the situation. This holds up the US in its expansion plans, and inevitable helps the other nations catch up in technology and resources. The space race is still ongoing.", //Descrption for scene
+    "You end up telling the Colonel that if he doesn't shut down the drill, that you would report him to both the UN and his superiors about the situation. This holds up the US in its expansion plans, and inevitable helps the other nations catch up in technology and resources. The space race is still ongoing.\n\n Ending 3 - Morality", //Descrption for scene
     "", //Text for option 1
     null, //For end sections, there is no target
     "", //Text for option 1
     null //For end sections, there is no target
   ); // okay ending //blackmail the colonel into not selling the drill materials
-  lunarEnd2 = new StorySection(
-    "You report the Lt. Colonel West to both your superiors and the Colonel about his plans. You were never able to figure out if the Colonel was actually privately earning money through this trade but it doesn't matter much. The world spurs faster than ever with an increase of the materials dug from the moon.\n\n", //Descrption for scene
+  lunarEnd2B = new StorySection(
+    "You report Lt. Colonel West's dissapearance, and the rest of the situation to both your superiors and the Colonel. You were never able to figure out why the Colonel was actually so defensive about you being there, but it doesn't matter much. The world spurs faster than ever with an increase of the materials dug from the moon.\n\nEnding 2-Helplessness", //Descrption for scene
+    "", //Text for option 1
+    null, //For end sections, there is no target
+    "", //Text for option 1
+    null //For end sections, there is no target
+  ); // bad ending //report the lt Colonel
+  lunarEnd2A = new StorySection(
+    "You report Lt. Colonel West to both your superiors and the Colonel about his plans. You were never able to figure out if the Colonel was actually privately earning money through this trade but it doesn't matter much. The world spurs faster than ever with an increase of the materials dug from the moon.\n\nEnding 2-Helplessness", //Descrption for scene
     "", //Text for option 1
     null, //For end sections, there is no target
     "", //Text for option 1
     null //For end sections, there is no target
   ); // bad ending //report the lt Colonel
   lunarEnd1 = new StorySection(
-    "You leave the Lunar station with more questions than answers but ultimately decided it wasn't within your power to stop. You stay in orbit for about a week when you hear news about the Giant Moon Excavator being finished. The Colonel was right, the minerals they mined ended up being full of crucial elements. It propelled the US to being a space superpower and only furthered their ambitions in space. China was somehow able to acquire much of these rare materials and used to to further their stocks.", //Descrption for scene
+    "You leave the Lunar station with more questions than answers but ultimately decided it wasn't within your power to stop anything that was happening. You stay in orbit for about a week when you hear news about the Giant Moon Excavator being finished. The Colonel was right, the minerals they mined ended up being full of crucial elements. It propelled the US to being a space superpower and only furthered their ambitions in space. China was somehow able to acquire much of these rare materials and used to to further their stocks. \n\n Ending 1 - Idleness", //Descrption for scene
     "", //Text for option 1
     null, //For end sections, there is no target
     "", //Text for option 1
     null //For end sections, there is no target
   ); // worst ending // do nothing after finding out everything
   //moon ending
-  moonChoice3 = new StorySection(
-    "Well this has escalated quickly. There's no way I'm blowing up an escavator, corruption or not, that'll only give them international support. But if I tell Ramos about West's intentions, there won't be anyone to stop him in the future.\\What should we do?",
+  moonChoice3B = new StorySection(
+    "You ponder what's happened here so far. You've been threatened by the Colonel, and you saw a man with a backpack that was clearly plotting something. You can't find the Lt Colonel either. What should you do?",
     "(A) Leave Now",
     lunarEnd1,
     "(D) Report the Lt. Colonel",
-    lunarEnd2
+    lunarEnd2B
+  );
+  moonChoice3A = new StorySection(
+    "Well this has escalated quickly. There's no way you're blowing up an escavator, corruption or not, that'll only give them international support. But if you tell Ramos about West's intentions, there won't be anyone to stop him in the future.\\What should you do?",
+    "(A) Leave Now",
+    lunarEnd1,
+    "(D) Report the Lt. Colonel",
+    lunarEnd2A
   );
   //final decision for the moon
+  investigation9 = new StorySection(
+    "You head straight to the Colonel and tell him immediately of Colonel West's dissapearance, the man you saw in the cafeteria, and even the explosives you found in your ship. He tells you that he will handle it and everything will be fine. He sends you off and you end up not being able to do much else but spectate.",
+    "(A) Next",
+    lunarEnd2B,
+    "",
+    investigation8
+  );
+  investigation8 = new StorySection(
+    "You get back to your ship and ponder who you saw in the cafeteria, when you get back to your ship and find a backpack. You open it, and see that it...contains C-4 explosives?! You immediately check if it is armed but it's just raw C-4. This is bad, what shoud you? ",
+    "(A) Tell the Colonel",
+    investigation9,
+    "(D) Put it in your ship and leave now",
+    lunarEnd1
+  );
+  investigation7 = new StorySection(
+    "You look in the cafeteria after a day of looking around and pondering, and its remarkably dark here. You stumble around to see if there is other rooms when you see one room with a light on. You open the door see a man with a large backpack, and make brief eyecontact before he bolts and runs through another door into the darkness of the cafeteria where you lose him.",
+    "(A) Tell the Colonel",
+    investigation8,
+    "(D) Go back to your ship to think",
+    moonChoice3B
+  ); // decision for your plan
   investigation6 = new StorySection(
     "As he walks away, you look inside the bag, and check what he gave you. You immediately recognize it to be military grade C$ explosives. He...wants to blow up the excavator?! What can- what should you do?",
     "(A) Follow his plan",
     lunarEnd4A,
-    "(B) Go back to your ship to think",
-    moonChoice3
+    "(D) Go back to your ship to think",
+    moonChoice3A
   );
   investigation5 = new StorySection(
     "Good. Since you haven't ratted me out, that means you're on my side,''He hands you a backpack that was behind him. ''I've heard you're experienced, you should know how to use these. Tell the Colonel you want to see the the Excavator tonight before you leave, and leave this in there. I'll handle the rest.''",
     "(A) Take the bag",
     investigation6,
-    "(B) Don't take the bag",
-    moonChoice3
+    "(D) Don't take the bag",
+    moonChoice3B
   ); // Lt. Colonel whistleblower
   investigation4B = new StorySection(
-    "Colonel Ramos is standing at his desk when you come in. ",
+    "You asked around to find the Lt. Colonel but he wasn't anywhere to be found. One of the base soldiers told you that he likes to hang around the cafeteria, so you head over there. ",
     "(A) Next",
-    investigation5,
+    investigation7,
     "",
-    investigation5
+    investigation7
   ); // Lt Colonel has the metal tube
   investigation4AB = new StorySection(
     "You walk forward not sure why he signalled and he points at the ceiling as you walk through a camera's field of view. That's when West takes out a small device and points it at the camera which immediately powers down.\n\n He looks even more dissapointed than he was earlier and says, ''You really can't take a hint can you?'' as rushes off behind you and into the hangar. ",
@@ -261,7 +296,7 @@ function createStory() {
     scroll1
   );
   investigation1B = new StorySection(
-    "You return to the hangar and sit near your ship. \nYou take out the tube in your pocket. I wonder what this is?",
+    "You return to the hangar and sit near your ship. \nYou take out the tube in your pocket. You wonder what this is?",
     "(A) Inspect the metal tube",
     investigation2,
     "",
@@ -269,8 +304,8 @@ function createStory() {
   ); // you have the letter
   investigation1A = new StorySection(
     "You return to the hangar and sit near your ship. \nWhat should you do?",
-    "(A) Look around the base ",
-    investigation5,
+    "(A) Look around the base",
+    investigation7,
     "(D) Talk to the Lt. Colonel",
     investigation4B
   ); // you don't have the letter
