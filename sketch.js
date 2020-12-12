@@ -11,6 +11,8 @@ target(1/2) is a reference to the next story section that option activates.
 //animated text/strings
 //Spite screen
 //allow for mouse clicking to advance screens
+//overlay menu to see time in game, not being have to be updated manual by me
+//allow to loop certain interactions
 
 'use strict'
 
@@ -313,49 +315,49 @@ function createStory() {
   //unfinished section
   // investigation of the moon
   lunarLieutenant6 = new StorySection(
-    "''Well, if there's nothing else to discuss,''he lifts his hand and gestures to the door. ''You're free to go.'' You get up and briskly walk to the door and leave back into the hall way. ",
+    "Day 1, 8:31 AM\n\n''Well, if there's nothing else to discuss,''he lifts his hand and gestures to the door. ''You're free to go.'' You get up and briskly walk to the door and leave back into the hall way. ",
     "(A) Next",
     investigation1B,
     "",
     investigation1B
   );
   lunarLieutenant5 = new StorySection(
-    "''I know why you're here. Command told me you were coming as the UN's representative to keep an eye on this station, and the US. Now, I'm going to tell you this once, I will let you stay, but if you get in the way of my men, I will personally launch you and your ''ship'', back to Earth faster than you can say, 'oops'. ",
+    "Day 1, 8:30 AM\n\n''I know why you're here. Command told me you were coming as the UN's representative to keep an eye on this station, and the US. Now, I'm going to tell you this once, I will let you stay, but if you get in the way of my men, I will personally launch you and your ''ship'', back to Earth faster than you can say, 'oops'. ",
     "(A) Next",
     lunarLieutenant6,
     "",
     lunarLieutenant6
   );
   lunarLieutenant4 = new StorySection(
-    "You get a good look at Colonel Ramos as he relaxes into his seat. While standing he was quite tall, but now you can see that his face is scarred with cuts and burns. His face is stoic as he locks eyes with you.",
+    "Day 1, 8:30 AM\n\nYou get a good look at Colonel Ramos as he relaxes into his seat. While standing he was quite tall, but now you can see that his face is scarred with cuts and burns. His face is stoic as he locks eyes with you.",
     "(A) Next",
     lunarLieutenant5,
     "",
     lunarLieutenant5
   );
   lunarLieutenant3B = new StorySection(
-    "The Colonel turns and raises his eyebrow at you. ''Lieutenant Colonel West? He's just jittery.'', he says as he takes a seat into his large office chair.",
+    "Day 1, 8:30 AM\n\nThe Colonel turns and raises his eyebrow at you. ''Lieutenant Colonel West? He's just jittery.'', he says as he takes a seat into his large office chair.",
     "(A) Next",
     lunarLieutenant4,
     "",
     lunarLieutenant4
   );
   lunarLieutenant3A = new StorySection(
-    "''I hope the ride wasn't unpleasant in your...aircraft.'', he says somewhat mockingly. He turns around and sits back into this large office chair.",
+    "Day 1, 8:30 AM\n\n''I hope the ride wasn't unpleasant in your...aircraft.'', he says somewhat mockingly. He turns around and sits back into this large office chair.",
     "(A) Next",
     lunarLieutenant4,
     "",
     lunarLieutenant4
   );
   lunarLieutenant2 = new StorySection(
-    "''Hello,'' said the Colonel calmly, from behind his desk looking out the window overlooking the base. The Lieutenant Colonel steps out and closes the door behind you. ",
+    "Day 1, 8:30 AM\n\n''Hello,'' said the Colonel calmly, from behind his desk looking out the window overlooking the base. The Lieutenant Colonel steps out and closes the door behind you. ",
     "(A) Hello, sir.",
     lunarLieutenant3A,
     "(D) Is your Lieutenant Colonel alright?",
     lunarLieutenant3B
   ); //unique dialogue choice (edit later to differ from other dialogue)
   lunarLieutenant1 = new StorySection(
-    "You pick it up and put it in your pocket, as you catch back up to the officer. When you get to him, you find him standing next to a locked door as he waits for you. He whispers something to you under his breath that sounds like ''read it later'', he swipes a card on the door in front of you and it opens up.",
+    "Day 1, 8:30 AM\n\nYou pick it up and put it in your pocket, as you catch back up to the officer. When you get to him, you find him standing next to a locked door as he waits for you. He whispers something to you under his breath that sounds like ''read it later'', he swipes a card on the door in front of you and it opens up.",
     "(A) Next",
     lunarLieutenant2,
     "",
@@ -363,49 +365,49 @@ function createStory() {
   );
   //keeping it timeline ^
   lunarCommander6 = new StorySection(
-    "''Well, if there's nothing else to discuss,'' lifts his hand and gestures to the door. ''You're free to go.''. You get up and briskly walk to the door and leave back into the hall way. ",
+    "Day 1, 8:31 AM\n\n''Well, if there's nothing else to discuss,'' lifts his hand and gestures to the door. ''You're free to go.''. You get up and briskly walk to the door and leave back into the hall way. ",
     "(A) Next",
     investigation1A,
     "",
     investigation1A
   );
   lunarCommander5 = new StorySection(
-    "''I know why you're here. Command told me you were coming as the UN's representative to keep an eye on this station, and the US. Now, I'm going to tell you this once, I will let you stay, but if you get in the way of my men, I will personally launch you and your ''ship'', back to Earth faster than you can say, 'oops'. ",
+    "Day 1, 8:30 AM\n\n''I know why you're here. Command told me you were coming as the UN's representative to keep an eye on this station, and the US. Now, I'm going to tell you this once, I will let you stay, but if you get in the way of my men, I will personally launch you and your ''ship'', back to Earth faster than you can say, 'oops'. ",
     "(A) Next",
     lunarCommander6,
     "",
     lunarCommander6
   );
   lunarCommander4 = new StorySection(
-    "You get a good look at Colonel Ramos as he relaxes into his seat. While standing he was quite tall, but now you can see that his face is scarred with cuts and burns. His face is stoic as he locks eyes with you.",
+    "Day 1, 8:30 AM\n\nYou get a good look at Colonel Ramos as he relaxes into his seat. While standing he was quite tall, but now you can see that his face is scarred with cuts and burns. His face is stoic as he locks eyes with you.",
     "(A) Next",
     lunarCommander5,
     "",
     lunarCommander5
   );
   lunarCommander3B = new StorySection(
-    "The Colonel turns and raises his eyebrow at you. ''Lieutenant Colonel West? He's just jittery.'', he says as he takes a seat into his large office chair.",
+    "Day 1, 8:30 AM\n\nThe Colonel turns and raises his eyebrow at you. ''Lieutenant Colonel West? He's just jittery.'', he says as he takes a seat into his large office chair.",
     "(A) Next",
     lunarCommander4,
     "",
     lunarCommander4
   );
   lunarCommander3A = new StorySection(
-    "''I hope the ride wasn't unpleasant in your...aircraft.'', he says somewhat mockingly. He turns around and sits back into this large office chair.",
+    "Day 1, 8:30 AM (Earth Time)\n\n''I hope the ride wasn't unpleasant in your...aircraft.'', he says somewhat mockingly. He turns around and sits back into this large office chair.",
     "(A) Next",
     lunarCommander4,
     "",
     lunarCommander4
   );
   lunarCommander2 = new StorySection(
-    "''Hello,'' said the Colonel calmly, from behind his desk looking out the window overlooking the base. The Lieutenant Colonel steps out and closes the door behind you. ",
+    "Day 1, 8:30 AM (Earth Time)\n\n''Hello,'' said the Colonel calmly, from behind his desk looking out the window overlooking the base. The Lieutenant Colonel steps out and closes the door behind you. ",
     "(A) Hello, sir.",
     lunarCommander3A,
     "(D) Is your Lieutenant Colonel alright?",
     lunarCommander3B
   ); //unique dialogue choice
   lunarCommander1 = new StorySection(
-    "You pick it up and catch up to the officer ahead of you. ''Excuse me sir, you dropped this,'' and hand it back to him. He looks at you profoundly surprised and quickly puts it back into his pocket. He shakes his head, seemingly dissapointed in you. You get a good look at his insignia and see that he is the Lieutenant Colonel here.\n\nBefore you can get a word in, he swipes a card on the door in front of you and it opens up.",
+    "Day 1, 8:30 AM (Earth Time)\n\n You pick it up and catch up to the officer ahead of you. ''Excuse me sir, you dropped this,'' and hand it back to him. He looks at you profoundly surprised and quickly puts it back into his pocket. He shakes his head, seemingly dissapointed in you. You get a good look at his insignia and see that he is the Lieutenant Colonel here.\n\nBefore you can get a word in, he swipes a card on the door in front of you and it opens up.",
     "(A) Next",
     lunarCommander2,
     "",
