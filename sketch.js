@@ -76,7 +76,7 @@ function draw() {
   line(windowWidth * 0.50, windowHeight * 0.9, windowWidth * 0.50, windowHeight);
 
   textAlign(CENTER); //text styles
-  fill(255, 255, 0);
+  fill(255, 255, 145);
   textSize(windowWidth / 35);
   // Draw the text for the current option on the screen
   text(current.text, windowWidth * 0.05, windowHeight * 0.05, windowWidth * 0.95, windowHeight * 0.75);
@@ -601,7 +601,7 @@ function createStory() {
     openingPassage1
   );
   title = new StorySection(
-    "The Golden Age\n\nThe Lunar Storm",
+    "The Golden Age\n\nThe Lunar Storm\n\n\nControls are A and D on the keyboard.",
     "(A) Next", //Text for option 1
     beginningQuote, //Object target for option 1
     "by Melvin Mingoa",
