@@ -70,6 +70,7 @@ function draw() {
   background(50);
   image(img4, mouseX - 25, mouseY - 25);
   image(img3, windowWidth * 0.010, windowHeight * 0.02, windowWidth * 0.030, windowHeight * 0.055);
+  image(img2, windowWidth * 0.010, windowHeight * 0.775, windowWidth * 0.050, windowHeight * 0.09);
   strokeWeight(10); // screen dividers
   line(0, windowHeight * 0.90, windowWidth, windowHeight * 0.9);
   line(windowWidth * 0.50, windowHeight * 0.9, windowWidth * 0.50, windowHeight);
