@@ -240,7 +240,7 @@ function createStory() {
     investigation4AB
   ); // You have read the contents of the tube, looking for Lt Colonel West
   interrogation3 = new StorySection(
-    "''I dont't have to tell you anything. Get off my station.'' he says as he gets up, clearly agitated about this coming to light. His guards walk in and escort you to your ship, where you're forced to leave the base.",
+    "''I don't have to tell you anything. Get off my station.'' he says as he gets up, clearly agitated about this coming to light. His guards walk in and escort you to your ship, where you're forced to leave the base.",
     "(A) Next",
     lunarEnd1,
     "",
