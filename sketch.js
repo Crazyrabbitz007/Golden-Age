@@ -199,7 +199,7 @@ function createStory() {
     moonChoice3B
   ); // decision for your plan
   investigation6 = new StorySection(
-    "As he walks away, you look inside the bag, and check what he gave you. You immediately recognize it to be military grade C$ explosives. He...wants to blow up the excavator?! What can- what should you do?",
+    "As he walks away, you look inside the bag, and check what he gave you. You immediately recognize it to be military grade C4 explosives. He...wants to blow up the excavator?! What can- what should you do?",
     "(A) Follow his plan",
     lunarEnd4A,
     "(D) Go back to your ship to think",
